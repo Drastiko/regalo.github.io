@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://unpkg.com/compromise"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>¡Feliz Cumpleaños, Mi Amor!</h1>
+  </header>
+  <section class="container">
+    <div class="wishes">
+      <h2>Mis mejores deseos para la persona más especial, Nuria</h2>
+      <p>En este día tan especial, quiero desearte un cumpleaños lleno de amor, alegría y sorpresas inolvidables. Que
+        todos tus sueños se hagan realidad y que cada momento esté lleno de felicidad. ¡Te amo con todo mi corazón!</p>
+    </div>
+    <div class="gifts">
+      <h2>Regalos especiales para ti</h2>
+      <ul>
+        <li>Mis amor envolviéndote de cada dia.</li>
+        <li>Una union apasionado que sella nuestro amor.</li>
+        <li>Un ahnelo de estar juntos, lleno de felicidad.</li>
+      </ul>
+    </div>
+    <div class="icons">
+      <h2>Nuestro amor es como...</h2>
+      <div class="icon-container">
+        <ion-icon name="heart-outline" class="icon corazon" ></ion-icon>
+        <ion-icon name="rose-outline" class="icon rosa" id="rosa"></ion-icon>
+        <ion-icon name="wine-outline" class="icon vino" id="vino"></ion-icon>
+      </div>
+    </div>
+    <div class="things-we-want">
+      <h2>Nuestras metas y deseos juntos</h2>
+      <ul id="desires-list">
+      </ul>
+      <div class="add-desire">
+        <form id="add-desire-form" action="datos.php">
+            <input type="text" id="new-desire" name="newDesireText" placeholder="Agrega un deseo...">
+            <button id="add-desire-button" type="submit" data-desire="add">
+                <ion-icon name="add-outline"></ion-icon>
+            </button>
+        </form>
+    </div>    
+    </div>
+    <div class="more-wishes">
+      <h2>Cada día contigo es un regalo</h2>
+      <p>Que este nuevo año de vida te traiga momentos inolvidables y que cada día que pase sea mejor que el anterior.
+        Estoy emocionado por todo lo que compartiremos juntos. ¡Feliz cumpleaños, mi amor!</p>
+    </div>
+    <div class="celebration">
+      <h2>Una celebración llena de amor</h2>
+      <p>Que esta celebración marque el comienzo de un año lleno de amor y compenetración para nosotros.</p>
+    </div>
+    <div class="gratitude">
+      <h2>Mi eterno agradecimiento</h2>
+      <p>Estoy profundamente agradecido por tenerte en mi vida. Tu amor, amistad y alegría son regalos invaluables.
+        Eres una razón de mi felicidad. ¡Feliz cumpleaños, mi amor!</p>
+    </div>
+    <div class="things-I-love">
+      <h2>Las cosas que me encantan de ti</h2>
+      <ul>
+        <li>Tu sonrisa contagiosa.</li>
+        <li>Tu bondad, amabilidad y comprensión que tienes por mi son invaluables.</li>
+        <li>Tus hermosos ojos.</li>
+        <li>Tu sentido del humor.</li>
+      </ul>
+    </div>
+    <div class="carta">
+      <div class="encabezado">
+        <p>Querida Novia, Nuria</p>
+      </div>
+      <div class="contenido">
+        <p>Espero que esta carta te llegue llena de amor y cariño, porque eso es exactamente lo que siento por ti. Desde el momento en que entraste en mi vida, todo cambió para mejor.</p>
+        <p>Tu sonrisa ilumina mis días, y tu amor llena mi corazón de felicidad. No puedo evitar recordar todos esos momentos especiales que hemos compartido juntos, desde nuestras risas hasta nuestras conversaciones profundas.</p>
+        <p>Quiero que sepas cuánto significas para mí. Eres mi apoyo incondicional, mi compañera en esta aventura llamada vida y, sobre todo, mi gran amor. No puedo imaginar un futuro sin ti a mi lado.</p>
+        <p>Gracias por ser la persona maravillosa que eres. Cada día contigo es un regalo que atesoro, y no puedo esperar para crear más recuerdos juntos en el futuro.</p>
+      </div>
+      <div class="firma">
+        <p>Atentamente,</p>
+        <p>David Veas</p>
+      </div>
+    </div>
+    <h1>IA para mi Novia</h1>
+
+    <form id="formulario-ia">
+        <label id="label-IA" for="pregunta">Haz una pregunta: </label>
+        <input type="text" id="pregunta" placeholder="Escribe una pregunta..." required>
+        <button id="btn-IA" type="submit">Enviar</button>
+    </form>
+
+    <div id="respuesta-ia"></div>
+    <div class="surprise">
+      <h2>Una sorpresa especial</h2>
+      <p>¡No es solo tu cumpleaños, es el día en que el mundo recibió un regalo increíble! Quiero que cierres los ojos y
+        cuentes hasta tres. Cuando los abras, encontrarás un regalo especial abajo esperándote. ¡Te amo!</p>
+      <button class="press-button">Presióname</button>
+    </div>
+
+  </section>
+  <footer>
+    <p>Con todo mi amor, David Veas</p>
+    <p>@Drastiko 2023, todos los derechos reservados</p>
+    <div class="hacker">
+      <img src="hacker.png" alt="hacker"/>
+    </div>
+    <i class="fas fa-user-secret"></i>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <script src="cambiar.js"></script>
+  <script src="lista.js"></script>
+  <script src="IA.js"></script>
+  </script>
+</body>
+
+</html>

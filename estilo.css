@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #555;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    position: relative;
+    font-weight: 400;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+header {
+    background: linear-gradient(to right, #cc4a6a, #ff002b);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.container .wishes,
+.container .gifts,
+.container .icons,
+.container .more-wishes,
+.container .celebration,
+.container .memories,
+.container .gratitude {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+}
+
+.icon-container {
+    text-align: center;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.blinking-text {
+    animation: blink 2s infinite;
+}
+
+.icon {
+    font-size: 36px;
+    color: #FF3366;
+    margin: 10px;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.corazon:hover {
+    color: rgb(209, 10, 10);
+}
+
+.rosa:hover {
+    color: #FF3366;
+}
+
+.vino:hover {
+    color: #800020;
+}
+
+.surprise {
+    text-align: center;
+    padding: 20px;
+}
+
+.press-button {
+    background-color: #f1184e;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.press-button:hover {
+    background-color: #FF1A40;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer .hacker {
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    display: inline-block;
+    margin: 0 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+footer .hacker img {
+    width: 100%;
+    height: auto;
+}
+
+footer .fa-user-secret {
+    font-size: 24px;
+    color: #888;
+    margin-left: 10px;
+}
+
+.heart {
+    position: absolute;
+    color: red;
+    font-size: 24px;
+}
+
+.flower {
+    position: absolute;
+    color: pink;
+    font-size: 24px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.things-we-want {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.things-we-want h2 {
+    font-size: 29px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#desires-list {
+    padding: 0;
+}
+
+#desires-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    list-style-type: disc;
+}
+
+
+.delete-desire {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-desire:hover {
+    background-color: #ff4343;
+}
+
+.add-desire {
+    margin-top: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-desire-form {
+    display: flex;
+    align-items: center;
+}
+
+#new-desire {
+    width: 350px;
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#add-desire-button {
+    background-color: #FF3366;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-desire-button:hover {
+    background-color: #FF1A40;
+}
+
+
+.carta {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contenido {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.firma {
+    margin-top: 40px;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+#formulario-ia {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#label-IA {
+    font-weight: bold;
+}
+
+#pregunta{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#btn-IA {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FF1A40;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#respuesta-ia {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #555;
+    border-radius: 3px;
+}
